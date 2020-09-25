@@ -329,7 +329,7 @@ class GooglePlayAPI(object):
                                     headers=headers,
                                     params=params,
                                     verify=ssl_verify,
-                                    timeout=60,
+                                    timeout=120,
                                     proxies=self.proxies_config)
 
         message = googleplay_pb2.ResponseWrapper.FromString(response.content)
